@@ -1,21 +1,21 @@
 
 // Create canvas variable
 var canvas = new fabric.Canvas('myCanvas')
- blockY=1;
- blockX=1;
+ block_y=1;
+ block_x=1;
 
-blockImageWidth = 350;
-blockImageHeight = 430;
+block_image_width = 350;
+block_image_height = 430;
 
-var blockImageObject= "";
+var block_image_object= "";
 
-function new_image(getImage)
+function new_image(get_image)
 {
-fabric.image.fromURL(get_image, function(Img) {
+fabric.Image.fromURL(get_image, function(Img) {
 	block_image_object= Img;
 
 	block_image_object.scaleToWidth(block_image_width)
-	block_image_object;scaleToHeight(block_image_height);
+	block_image_object.scaleToHeight(block_image_height);
 	block_image_object.set({
 		top:block_y,
 		left:block_x
@@ -38,23 +38,23 @@ console.log(keyPressed);
 	}
 	if(keyPressed == '86')
 	{
-		blockX = 200;
+		block_x = 200;
 		new_image('gr.png')
 	}
 	
 	if(keyPressed == '65')
 	{
-		blockX =350;
+		block_x =350;
 		new_image('yr.png')
 	}
 	if(keyPressed == '82')
 	{
-		blockX = 600;
+		block_x = 600;
 		 new_image('pr.png')
 	}
 	if(keyPressed == '73')
 	{
-		blockX = 700;
+		block_x = 700;
 		new_image('rr.jpg')
 	}
 	
