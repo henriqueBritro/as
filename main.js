@@ -9,7 +9,7 @@ blockImageHeight = 430;
 
 var blockImageObject= "";
 
-function newImage(getImage)
+function new_image(getImage)
 {
 fabric.image.fromURL(get_image, function(Img) {
 	block_image_object= Img;
